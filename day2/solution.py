@@ -22,7 +22,7 @@ def day2_part1():
 
 
 def day2_part2():
-    input = get_input_as_list(TEST_INPUT)
+    input = get_input_as_list(INPUT)
     total = 0
     for line in input:
         l, w, h = line.split("x")
