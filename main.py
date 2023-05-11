@@ -74,6 +74,10 @@
 # print("day18 - part 1: {}".format(day18_part1()))
 # print("day18 - part 2: {}".format(day18_part2()))
 
-from day19.solution import day19_part1, day19_part2
-print("day19 - part 1: {}".format(day19_part1()))
-print("day19 - part 2: {}".format(day19_part2()))
+# from day19.solution import day19_part1, day19_part2
+# print("day19 - part 1: {}".format(day19_part1()))
+# print("day19 - part 2: {}".format(day19_part2()))
+
+# from day20.solution import day20_part1, day20_part2
+# print("day20 - part 1: {}".format(day20_part1()))
+# print("day20 - part 2: {}".format(day20_part2()))
