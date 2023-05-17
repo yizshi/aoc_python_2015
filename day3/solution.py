@@ -31,7 +31,7 @@ def day3_part1():
             location.y = location.y + 1
         house_cord_list.append(location.get_location())
 
-    final_list = list(map(list, set(map(lambda i: tuple(i), house_cord_list))))
+    final_list = set(map(lambda i: tuple(i), house_cord_list))
 
     return len(final_list)
 
@@ -65,12 +65,12 @@ def day3_part2():
                 robot_location.y = robot_location.y + 1
             robot_house_cord_list.append(robot_location.get_location())
 
-    santa_final_list = list(map(list, set(map(lambda i: tuple(i), santa_house_cord_list))))
-    robot_final_list = list(map(list, set(map(lambda i: tuple(i), robot_house_cord_list))))
+    santa_final_list = list(set(map(lambda i: tuple(i), santa_house_cord_list)))
+    robot_final_list = list(set(map(lambda i: tuple(i), robot_house_cord_list)))
 
     for i in robot_final_list:
         santa_final_list.append(i)
     santa_final_list.append([0, 0])
-    final_list = list(map(list, set(map(lambda i: tuple(i), santa_final_list))))
+    final_list = set(map(lambda i: tuple(i), santa_final_list))
 
     return len(final_list)
